@@ -1,3 +1,4 @@
+(C) 3m5. Media GmbH 2015
 # RESTgen.API
 the official 3m5. RESTgen API
 
