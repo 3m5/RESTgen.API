@@ -8,15 +8,17 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
+import javax.ws.rs.core.Response.Status;
+
 /**
- * Annotation for marking a response object of a REST endpoint method.
+ * Annotation for marking a http response code of a REST endpoint method for an
+ * error.
  * 
  * @author osterrath
- * @deprecated Use {@link ResponseType} instead.
  * 
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
-public @interface JSONResponseType {
-	Class<?>[] value();
+public @interface ResponseErrorCode {
+	Status[] value();
 }

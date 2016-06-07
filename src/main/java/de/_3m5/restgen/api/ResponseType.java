@@ -12,11 +12,10 @@ import java.lang.annotation.Target;
  * Annotation for marking a response object of a REST endpoint method.
  * 
  * @author osterrath
- * @deprecated Use {@link ResponseType} instead.
  * 
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
-public @interface JSONResponseType {
+public @interface ResponseType {
 	Class<?>[] value();
 }

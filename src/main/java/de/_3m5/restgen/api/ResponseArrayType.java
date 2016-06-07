@@ -9,14 +9,13 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * Annotation for marking a response object of a REST endpoint method.
+ * Annotation for marking a response array object of a REST endpoint method.
  * 
  * @author osterrath
- * @deprecated Use {@link ResponseType} instead.
  * 
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
-public @interface JSONResponseType {
+public @interface ResponseArrayType {
 	Class<?>[] value();
 }

@@ -12,7 +12,7 @@ import java.lang.annotation.Target;
  * Annotation for marking a response array object of a REST endpoint method.
  * 
  * @author osterrath
- * 
+ * @deprecated Use {@link ResponseArrayType} instead.
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
