@@ -7,12 +7,17 @@
 	<parent>
 		<groupId>de._3m5</groupId>
 		<artifactId>restgen-pom</artifactId>
-		<version>0.0.4-SNAPSHOT</version>
+		<version>0.0.9-SNAPSHOT</version>
 	</parent>
 
 	<name>restgen-api</name>
 
 	<dependencies>
+		<dependency>
+			<groupId>javax.ws.rs</groupId>
+			<artifactId>javax.ws.rs-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
